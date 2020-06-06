@@ -6,60 +6,55 @@
 body{
   background:#FFFFF0;
   font-family: arial;
+  position:relative;
   font-size: 20px;
   margin: 0;
   padding: 0;
+  height: 100%;
+  padding-bottom:60px;
 }
-/* headers */
-header h1{
-  color: white;
-}
-h2{
-  color: black;
-}
+
 /* links */
-a{
+a {
   color: rgb(255, 208, 158);
   text-decoration: none;
+  /* background-color: red; */
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
-/* paragraphs */
-p {
-  background: #666;
-  color:white;
-  padding: 5px;
+
+div.container {
+  min-height: 100%;
+  position: relative;
 }
-button{
-  border: none;
-  background-color: #b8b6b6;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-}
-header{
+
+header {
   background-color: black;
   background-image: url("../images/background.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
-  color: white;
-  padding: 15px;
+  /* color: white; */
+  padding-top: 25px;
   text-align: center;
+  font-size: 200%;
 }
 
-header ul li a{
+header ul li a {
   color: white;
 }
 
 header .logo a{
   background-image: url("../images/logo.png");
-  /* background-size: 80 85; */
+  background-size: 40px;
   background-repeat: no-repeat;
-  width: 80px;
-  height: 85px;
+  width: 40px;
+  height: 80px;
   display: inline-block;
   text-indent: -999999px;
+  position: relative;
+  top: -5px;
 }
 
 section{
@@ -69,33 +64,42 @@ section{
   display: flex;
   flex-direction: row;
 }
-div{
+
+section div{
   background-color: #001e6a;
   color: white;
   margin: auto;
 }
+
 ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
 nav ul li{
-  display: inline-block;
-  color: black;
+  display: inline-flex;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
 }
-nav ul li:hover{
-  /* background-color: rgb(0, 24, 149); */
-  /* color: white; */
-}
+
 footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
   color: white;
   background-color: black;
   font-size: 15px;
   padding: 5px 10px;
+  text-align: center;
 }
+/* footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+} */
 
 /* class, overwrites general styles */
 .secondary{
