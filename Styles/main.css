@@ -2,7 +2,9 @@
 - NOTE cascading style sheet: can be overwritten at the bottom!
 */
 
-/* entire body */
+
+/* BODY */
+
 body{
   background:#FFFFF0;
   font-family: arial;
@@ -10,36 +12,44 @@ body{
   font-size: 20px;
   margin: 0 auto;
   padding: 0;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
+  /* margin-bottom: -20px; */
+  display: block;
 }
 
-/* links */
-a {
-  color: rgb(255, 208, 158);
-  text-decoration: none;
-  /* background-color: red; */
-}
-a:hover {
-  text-decoration: underline;
-}
+/* HEADER */
 
-/* headers */
 header {
   background-color: black;
-  background-image: url("../images/background.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* color: white; */
+  /* background-image: url("../images/background.jpg"); */
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
   padding-top: 25px;
   text-align: center;
+  text-transform: uppercase;
   font-size: 200%;
 }
 
-header ul li a {
+/* NAVIGATION */
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li{
+  display: inline-flex;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header nav a {
   color: white;
-  font-family: arial;
+  font-family: didot;
 }
 
 header .logo a{
@@ -54,54 +64,63 @@ header .logo a{
   top: -5px;
 }
 
+
+/* LINKS */
+a {
+  color: rgb(255, 208, 158);
+  text-decoration: none;
+  /* background-color: red; */
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADLINES */
+h1, h2{
+  text-align: center;
+}
+
 /* section */
 section{
-  background-color: white;
-  color: black;
-  padding: 10px;
+  /* background-color: green; */
+  /* color: black; */
+  /* padding: 10px; */
   display: flex;
   flex-direction: row;
 }
 
-section div{
-  background-color: #001e6a;
-  color: white;
+/* FEATURES */
+
+.features {
+  /* background-color: red; */
+  color: #222;
+  padding: 20px;
+}
+
+.features figure {
+  width: 250px;
+  /* background-color: blue; */
   margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  /* text-decoration-style: dotted; */
+  color: #333;
 }
 
-ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.features figure img{
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: #333 0 0 10px;
+  width: 250px;
 }
 
-nav ul li{
-  display: inline-flex;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
-}
+/* FOOTER */
 
 footer{
   background-color: black;
-  bottom: 0;
-  color: white;
+  color: gray;
   font-size: 15px;
   height: 20px;
-  padding: 5px 0;
-  position: relative;
+  padding: 5px 5px;
   text-align: center;
-  width: 100%;
-}
-
-/* class, overwrites general styles */
-.secondary{
-  background: none;
-  color: green;
-}
-
-/* id, can only be used once per page */
-#special{
-  background-color: red;
-  padding: 5px;
 }
