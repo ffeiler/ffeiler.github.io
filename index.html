@@ -3,7 +3,7 @@
 <html>
   <head>
       <title> ffeiler|Main Page </title>
-      <link href="Styles/main.css" rel="stylesheet" type="text/css"/>
+      <link href="styles/main.css" rel="stylesheet" type="text/css"/>
       <link rel="icon" href="images/favicon.png">
       <meta charset="utf-8">
       <meta property="og:site_name" content="HTML Test" />
@@ -12,17 +12,26 @@
       <meta property="og:title" content="HTML" />
       <meta property="og:description" content="Description" />
       <link rel="apple-touch-icon" sizes="192x192" href="images/favicon.png" />
+      <script async src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+      <!-- <script>window.SmoothScrollOptions = { animationTime: 400, stepSize: 100, accelerationDelta: 50, accelerationMax: 3}</script> -->
 </head>
 
   <body>
       <header>
         <nav>
-          <ul>
+          <ul class="desktop">
             <li><a href="index.html">Home</a></li>
             <li><a href="page2.html">Secondary</a></li>
             <li class="logo"><a href="index.html">Homepage Logo</a></li>
             <li><a href="beginner.html">Beginner</a></li>
             <li><a href="about.html">About</a></li>
+          </ul>
+          <ul class="mobile">
+            <!-- <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Secondary</a></li> -->
+            <li class="logo"><a href="index.html">Homepage Logo</a></li>
+            <!-- <li><a href="beginner.html">Beginner</a></li>
+            <li><a href="about.html">About</a></li> -->
           </ul>
         </nav>
         <!-- <h1>Homepage</h1> -->
@@ -44,8 +53,9 @@
             <img src="images/tea_leaves.webp" alt="tea leaves">
             <figcaption>tea leaves</figcaption>
           </figure>
-
       </section>
+
+      <script src="js/main.js"></script>
 
       <footer>Zimbostraße 5	• +(49) 2554 648523 • web@mail.com</footer>
   </body>

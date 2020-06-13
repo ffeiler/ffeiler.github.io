@@ -23,13 +23,17 @@ body{
 header {
   background-color: black;
   /* background-image: url("../images/background.webp"); */
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-  padding-top: 25px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 200%;
+  font-size: 40px;
+}
+
+header .mobile {
+  display: none;
 }
 
 /* NAVIGATION */
@@ -44,7 +48,20 @@ nav li{
   display: inline-flex;
   margin: 5px;
   padding: 10px;
-  border-radius: 5px;
+  /* border-radius: 5px;
+  border-style: solid;
+  border-color: white; */
+  position: center;
+  /* top: 5px; */
+}
+
+@media screen and (max-width: 950px) {
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: inline-block;
+  }
 }
 
 header nav a {
@@ -57,7 +74,7 @@ header .logo a{
   background-size: 40px;
   background-repeat: no-repeat;
   width: 40px;
-  height: 80px;
+  height: 63px;
   display: inline-block;
   text-indent: -999999px;
   position: relative;
@@ -95,24 +112,40 @@ section{
   /* background-color: red; */
   color: #222;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .features figure {
   width: 250px;
-  /* background-color: blue; */
+  padding: 10px;
   margin: auto;
   text-align: center;
   text-transform: uppercase;
   /* text-decoration-style: dotted; */
   color: #333;
+
+  /* border-style: solid;
+  border-color: black; */
 }
 
-.features figure img{
+.features figure img {
   border: 1px solid white;
   border-radius: 50%;
   box-shadow: #333 0 0 10px;
   width: 250px;
 }
+
+
+
+@media screen and (max-width: 310px){
+  .features figure{
+    width: 150px;
+  }
+  .features figure img {
+    width: 150px;
+  }
+}
+
 
 /* FOOTER */
 
@@ -124,3 +157,17 @@ footer{
   padding: 5px 5px;
   text-align: center;
 }
+
+
+/* MOBILE */
+
+/* @media screen and (max-width: 800px) {
+  .features{
+    background: pink;
+  }
+}
+@media screen and (max-width: 400px) {
+  .features{
+    background: red;
+  }
+} */
