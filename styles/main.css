@@ -24,7 +24,7 @@ body{
   /* max-width: 50em; */
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
   body {
     font-size: 150%;
   }
@@ -48,7 +48,7 @@ header {
   font-size: 40px;
   border-bottom: 3px solid black;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
   header {
     font-size: 200%;
   }
@@ -78,7 +78,7 @@ nav li{
   /* top: 5px; */
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   header .desktop {
     display: none;
   }
@@ -189,7 +189,7 @@ section{
   border-color: red; */
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
   .content {
     padding: 0px 5%;
   }
