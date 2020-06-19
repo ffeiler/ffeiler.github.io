@@ -24,11 +24,11 @@ body{
   /* max-width: 50em; */
 }
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
   body {
     font-size: 150%;
   }
-}
+} */
 
 /* HEADER */
 
