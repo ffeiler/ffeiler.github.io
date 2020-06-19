@@ -139,9 +139,9 @@ section{
   text-transform: uppercase;
   color: #333;
 
-  border-radius: 5px;
+  /* border-radius: 5px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 .features figure img {
