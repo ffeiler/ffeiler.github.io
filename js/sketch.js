@@ -4,7 +4,7 @@ const SIDES = 6;
 let PALETTE = [];
 
 function setup() {
-  createCanvas(windowWidth-20, windowHeight-100, SVG);
+  createCanvas(windowWidth-20, windowHeight-89, SVG);
   noLoop();
   angleMode(DEGREES);
   rectMode(CENTER);
@@ -30,7 +30,7 @@ function draw() {
 
 function outlineShape(x, y) {
   const strokeCol = multiRandom(PALETTE);
-  const weight = boolRandom() ? 1 : 3;
+  const weight = boolRandom() ? 1 : 4;
   const b_hex = boolRandom();
 
   stroke(strokeCol);
