@@ -18,7 +18,7 @@ function setup() {
 function draw() {
   for (var i = 0; i < 4; i++) {
     // testLines(CRYSTAL_SIZE/1.5,CRYSTAL_SIZE/2+i*height/5);
-    outlineShape(CRYSTAL_SIZE,CRYSTAL_SIZE/2+10+i*(CRYSTAL_SIZE+10));
+    outlineShape(CRYSTAL_SIZE*0.7,CRYSTAL_SIZE/2+10+i*(CRYSTAL_SIZE+10));
   }
 }
 
