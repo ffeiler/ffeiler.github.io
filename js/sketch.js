@@ -4,10 +4,11 @@ const SIDES = 6;
 let PALETTE = [];
 
 function setup() {
-  createCanvas(CRYSTAL_SIZE*2, 850, SVG);
+  createCanvas(windowWidth-20, windowHeight-100, SVG);
   noLoop();
   angleMode(DEGREES);
   rectMode(CENTER);
+  // background('red');
   PALETTE = [
     color(255, 52, 154), // pink
     color(4, 0, 152), // blue
@@ -21,6 +22,11 @@ function draw() {
     outlineShape(CRYSTAL_SIZE*0.7,CRYSTAL_SIZE/2+10+i*(CRYSTAL_SIZE+10));
   }
 }
+
+
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 function outlineShape(x, y) {
   const strokeCol = multiRandom(PALETTE);
