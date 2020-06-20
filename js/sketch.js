@@ -1,7 +1,7 @@
 const CRYSTAL_SIZE = 100;
 const SIDES = 6;
-const ROWS = 6
-const COLS = 4;
+const ROWS = 5;
+const COLS = 3;
 // const ANGLE = 360/SIDES;
 let PALETTE = [];
 
@@ -22,8 +22,8 @@ function setup() {
 function draw() {
   for (var i = 0; i < ROWS; i++) {
     for (var j = 0; j < COLS; j++) {
-      testLines(CRYSTAL_SIZE*(0.6+j*1.1), 50 + i*(CRYSTAL_SIZE+10));
-      outlineShape(CRYSTAL_SIZE*(0.6+j*1.1), 50 + i*(CRYSTAL_SIZE+10));
+      testLines(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
+      outlineShape(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
     }
   }
 }
