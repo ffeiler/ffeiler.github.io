@@ -1,5 +1,7 @@
-const CRYSTAL_SIZE = 200;
+const CRYSTAL_SIZE = 100;
 const SIDES = 6;
+const ROWS = 6
+const COLS = 4;
 // const ANGLE = 360/SIDES;
 let PALETTE = [];
 
@@ -12,14 +14,17 @@ function setup() {
   PALETTE = [
     color(255, 52, 154), // pink
     color(4, 0, 152), // blue
-    'limegreen'
+    'limegreen',
+    'darkred'
   ]
 }
 
 function draw() {
-  for (var i = 0; i < 4; i++) {
-    // testLines(CRYSTAL_SIZE/1.5,CRYSTAL_SIZE/2+i*height/5);
-    outlineShape(CRYSTAL_SIZE*0.7,CRYSTAL_SIZE/2+10+i*(CRYSTAL_SIZE+10));
+  for (var i = 0; i < ROWS; i++) {
+    for (var j = 0; j < COLS; j++) {
+      testLines(CRYSTAL_SIZE*(0.6+j*1.1), 50 + i*(CRYSTAL_SIZE+10));
+      outlineShape(CRYSTAL_SIZE*(0.6+j*1.1), 50 + i*(CRYSTAL_SIZE+10));
+    }
   }
 }
 
@@ -51,15 +56,16 @@ function outlineShape(x, y) {
 
 function testLines(x, y) {
   let numSym = boolRandom() ? SIDES : 2*SIDES; // ternary operator
-  const strokeCol = multiRandom(PALETTE);
+  // const strokeCol = multiRandom(PALETTE);
 
   push();
     noFill();
     stroke('black');
+    strokeWeight(0.05);
     translate(x, y);
 
     ellipse(0,0,CRYSTAL_SIZE,CRYSTAL_SIZE);
-    stroke(strokeCol);
+    stroke('black');
 
     const angle = 360/numSym;
     for (var i = 0; i < numSym; i++) {
