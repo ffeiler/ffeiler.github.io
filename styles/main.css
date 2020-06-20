@@ -156,14 +156,30 @@ section{
   }
 }
 
+.content_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px){
+  .content_img {
+    width: 100%;
+  }
+}
+
+
+
 
 /* FOOTER */
 
-footer{
+footer {
   background-color: white;
   border-top: 1px solid black;
   color: #666;
   font-size: 15px;
+  margin-top: 40px;
   padding: 5px;
   text-align: center;
 }
