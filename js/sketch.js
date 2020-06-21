@@ -27,8 +27,8 @@ function draw() {
     frameRate(FPS);
   }
 
-  for (var i = 0; i < ROWS; i++) {
-    for (var j = 0; j < COLS; j++) {
+  for (var i = 0; i < floor((height-80)/CRYSTAL_SIZE); i++) {
+    for (var j = 0; j < floor((width-15)/CRYSTAL_SIZE); j++) {
       testLines(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
       outlineShape(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
     }
