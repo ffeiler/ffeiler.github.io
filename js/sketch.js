@@ -11,7 +11,6 @@ function setup() {
   if (!LOOP) {
     noLoop();
   }
-
   angleMode(DEGREES);
   rectMode(CENTER);
   // background('red');
@@ -23,7 +22,7 @@ function setup() {
 }
 
 function draw() {
-  background('rgb(248, 248, 248)');
+  background('rgba(0, 0, 0, 0)');
   if (LOOP) {
     frameRate(FPS);
   }
