@@ -4,10 +4,18 @@ const ROWS = 5;
 const COLS = 3;
 // const ANGLE = 360/SIDES;
 let PALETTE = [];
+var FPS = 1.5;
+var LOOP = false;
 
 function setup() {
   createCanvas(windowWidth-20, windowHeight-89, SVG);
-  noLoop();
+  background(200);
+  if (LOOP) {
+    loop();
+  } else {
+    noLoop();
+  }
+
   angleMode(DEGREES);
   rectMode(CENTER);
   // background('red');
@@ -20,6 +28,11 @@ function setup() {
 }
 
 function draw() {
+  background('rgba(248, 248, 248, 0.5)');
+  if (LOOP) {
+    frameRate(FPS);
+  }
+
   for (var i = 0; i < ROWS; i++) {
     for (var j = 0; j < COLS; j++) {
       testLines(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
@@ -28,7 +41,9 @@ function draw() {
   }
 }
 
-
+function mousePressed() {
+  redraw();
+ }
 // function windowResized() {
 //   resizeCanvas(windowWidth, windowHeight);
 // }
