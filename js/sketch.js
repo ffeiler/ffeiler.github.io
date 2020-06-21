@@ -1,18 +1,14 @@
 const CRYSTAL_SIZE = 100;
 const SIDES = 6;
-const ROWS = 5;
-const COLS = 3;
-// const ANGLE = 360/SIDES;
+const ROWS = 10;
+const COLS = 5;
 let PALETTE = [];
 var FPS = 1.5;
 var LOOP = false;
 
 function setup() {
   createCanvas(windowWidth-20, windowHeight-89, SVG);
-  background(200);
-  if (LOOP) {
-    loop();
-  } else {
+  if (!LOOP) {
     noLoop();
   }
 
@@ -22,13 +18,12 @@ function setup() {
   PALETTE = [
     color(255, 52, 154), // pink
     color(4, 0, 152), // blue
-    'limegreen',
-    'darkred'
+    'limegreen'
   ]
 }
 
 function draw() {
-  background('rgba(248, 248, 248, 0.5)');
+  background('rgb(248, 248, 248)');
   if (LOOP) {
     frameRate(FPS);
   }
@@ -41,12 +36,16 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function mouseClicked() {
   redraw();
  }
-// function windowResized() {
-//   resizeCanvas(windowWidth, windowHeight);
-// }
+//
+function windowResized() {
+  resizeCanvas(windowWidth-20, windowHeight-89, SVG);
+  redraw();
+}
+
+
 
 function outlineShape(x, y) {
   const strokeCol = multiRandom(PALETTE);

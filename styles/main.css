@@ -195,7 +195,14 @@ button a {
   border-color: black;
 } */
 
-
+.p5canvas {
+  display: block;
+  margin: 0 auto;
+  margin-top: -30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: red;
+}
 
 /* FOOTER */
 
