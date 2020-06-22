@@ -1,10 +1,10 @@
-const CRYSTAL_SIZE = 100;
+const CRYSTAL_SIZE = 75;
 const SIDES = 6;
 const ROWS = 5;
 var COLS = 3;
 let PALETTE = [];
-var FPS = 1.5;
 var LOOP = false;
+var FPS = .5;
 
 function setup() {
   createCanvas(windowWidth-20, windowHeight-89, SVG);
@@ -27,8 +27,8 @@ function draw() {
     frameRate(FPS);
   }
 
-  for (var i = 0; i < floor((height-80)/CRYSTAL_SIZE); i++) {
-    for (var j = 0; j < floor((width-15)/CRYSTAL_SIZE); j++) {
+  for (var i = 0; i < floor((height)/CRYSTAL_SIZE); i++) {
+    for (var j = 0; j < floor((width)/CRYSTAL_SIZE); j++) {
       testLines(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
       outlineShape(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
     }
@@ -86,17 +86,4 @@ function testLines(x, y) {
       rotate(angle);
     }
   pop();
-}
-
-function boolRandom() {
-  const rand = random(1);
-  if (rand > 0.5) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function multiRandom(arr) {
-  return arr[floor(random(0,arr.length))];
 }
