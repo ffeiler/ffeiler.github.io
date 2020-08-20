@@ -32,7 +32,7 @@ function draw() {
   // fill entire screen with shapes
   for (var i = 0; i < floor((height)/CRYSTAL_SIZE); i++) {
     for (var j = 0; j < floor((width)/CRYSTAL_SIZE); j++) {
-      testLines(CRYSTAL_SIZE*(0.6+j*1.2), 55 + i*(CRYSTAL_SIZE+20));
+      // testLines(CRYSTAL_SIZE*(0.6+j*1.2), 55 + i*(CRYSTAL_SIZE+20));
       outlineShape(CRYSTAL_SIZE*(0.6+j*1.2), 55 + i*(CRYSTAL_SIZE+20));
     }
   }
