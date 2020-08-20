@@ -26,3 +26,7 @@ function boolRandom() {
 function multiRandom(arr) {
   return arr[floor(random(0,arr.length))];
 }
+
+function rndInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

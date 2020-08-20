@@ -1,10 +1,12 @@
 const CRYSTAL_SIZE = 75;
+const RADIUS = CRYSTAL_SIZE/2;
 const SIDES = 6;
 const ROWS = 5;
 var COLS = 3;
 let PALETTE = [];
 var LOOP = false;
 var FPS = .5;
+const LINE_SEGMENTS = 5;
 
 function setup() {
   createCanvas(windowWidth-20, windowHeight-89, SVG);
@@ -15,9 +17,9 @@ function setup() {
   rectMode(CENTER);
   // background('red');
   PALETTE = [
-    color(255, 52, 154), // pink
-    color(4, 0, 152), // blue
-    'limegreen'
+    color(241, 12, 69), // palatable pinkish red
+    color(49, 102, 138), // subtile ugly blue
+    color(107, 124, 133) // cubic battleship grey
   ]
 }
 
@@ -27,10 +29,11 @@ function draw() {
     frameRate(FPS);
   }
 
+  // fill entire screen with shapes
   for (var i = 0; i < floor((height)/CRYSTAL_SIZE); i++) {
     for (var j = 0; j < floor((width)/CRYSTAL_SIZE); j++) {
-      testLines(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
-      outlineShape(CRYSTAL_SIZE*(0.6+j*1.1), 55 + i*(CRYSTAL_SIZE+10));
+      testLines(CRYSTAL_SIZE*(0.6+j*1.2), 55 + i*(CRYSTAL_SIZE+20));
+      outlineShape(CRYSTAL_SIZE*(0.6+j*1.2), 55 + i*(CRYSTAL_SIZE+20));
     }
   }
 }
@@ -38,7 +41,7 @@ function draw() {
 function mouseClicked() {
   redraw();
  }
-//
+
 function windowResized() {
   resizeCanvas(windowWidth-20, windowHeight-89, SVG);
   redraw();
@@ -48,8 +51,7 @@ function windowResized() {
 
 function outlineShape(x, y) {
   const strokeCol = multiRandom(PALETTE);
-  const weight = boolRandom() ? 1 : 4;
-  const b_hex = boolRandom();
+  const weight = boolRandom() ? 2 : 4;
 
   stroke(strokeCol);
   strokeWeight(weight);
@@ -57,15 +59,50 @@ function outlineShape(x, y) {
   push();
     noFill();
     translate(x, y);
-    if (b_hex) {
-      getHexagonShape(0, 0, CRYSTAL_SIZE / 2)
-    } else {
-      ellipse(0,0,CRYSTAL_SIZE,CRYSTAL_SIZE);
-    }
+
+    const bool_shape = boolRandom() ? getHexagonShape(0, 0, CRYSTAL_SIZE / 2) :
+                       ellipse(0,0,CRYSTAL_SIZE,CRYSTAL_SIZE);
+    const bool_lines = boolRandom() ? insideLines(ls=LINE_SEGMENTS) :
+                       insideCircles(ls=LINE_SEGMENTS);
+
+
   pop();
 }
 
-// TEST LINES
+
+function insideCircles(ls) {
+  let numSym = boolRandom() ? 3 : 6;
+  strokeWeight(1);
+  stroke(PALETTE[2])
+
+  const angle = 360/numSym;
+
+  let circle_radius = rndInt(1,6);
+  let circle_center = boolRandom() ? 2 : 4;
+  let center = RADIUS / circle_center;
+  let size = RADIUS / ls;
+
+  for (var i = 0; i < numSym; i++) {
+    ellipse(center,center,size*circle_radius,size*circle_radius);
+    rotate(angle);
+  }
+}
+
+// LINES
+function insideLines(ls) {
+  let numSym = boolRandom() ? SIDES : 2*SIDES;
+  strokeWeight(1);
+  stroke(PALETTE[2])
+  const angle = 360/numSym;
+
+  let line_length = RADIUS/ls;
+  let minmax = [rndInt(1,ls),rndInt(1,ls)].sort();
+
+  for (var i = 0; i < numSym; i++) {
+    line(minmax[0]*line_length,0,minmax[1]*line_length,0);
+    rotate(angle);
+  }
+}
 
 function testLines(x, y) {
   let numSym = boolRandom() ? SIDES : 2*SIDES; // ternary operator
