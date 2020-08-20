@@ -37,15 +37,7 @@ body {
   padding: 0;
   width: 100%;
 }
-header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  background-color: white;
-  text-align: left;
-  font-size: 40px;
-  border-bottom: 3px solid black;
-}
+
 article,
 aside,
 details,
@@ -9412,7 +9404,7 @@ body {
 body > #header {
   /* Initially hidden to prevent FLOUC */
   display: none;
-  background-color: #fff;
+  background-color: white;
   /* Display over codemirror */
   position: relative;
   z-index: 100;
@@ -10092,6 +10084,8 @@ ul#new-menu {
   display: inline-block;
   padding-top: 4px;
 }
+
+
 /*!
 *
 * IPython text editor webapp
@@ -13089,13 +13083,7 @@ div#notebook {
     <!-- End of mathjax configuration --></head>
 <body>
 
-<header>
-  <nav>
-    <ul class="universal_header">
-      <li><a href="./index.html"> &#8887; florian feiler</a></li>
-    </ul>
-  </nav>
-</header>
+
 
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13137,6 +13125,20 @@ div#notebook {
 <div class="output_html rendered_html output_subarea ">
 <style>.container { width:80% !important; }</style>
 </div>
+<header style="position: fixed;
+top: 0px;
+width: 40%;
+background-color: white;
+text-align: left;
+font-size: 40px;
+border-bottom: 3px solid black;
+">
+  <nav>
+    <ul class="universal_header">
+      <li><a href="./index.html"> &#8887; florian feiler</a></li>
+    </ul>
+  </nav>
+</header>
 
 </div>
 
