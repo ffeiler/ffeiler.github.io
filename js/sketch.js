@@ -12,7 +12,7 @@ const DOTTED_LINE_SEGMENTS = 3;
 const TEST_LINES_SW = 0.25;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight-89, SVG);
+  createCanvas(windowWidth, windowHeight-64, SVG);
 
   if (!LOOP) {
     noLoop();
@@ -51,6 +51,6 @@ function draw() {
 function mouseClicked() { redraw() }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight-89, SVG);
+  resizeCanvas(windowWidth, windowHeight-64, SVG);
   redraw();
 }
