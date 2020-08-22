@@ -51,6 +51,6 @@ function draw() {
 function mouseClicked() { redraw() }
 
 function windowResized() {
-  resizeCanvas(windowWidth-20, windowHeight-89, SVG);
+  resizeCanvas(windowWidth, windowHeight-89, SVG);
   redraw();
 }
