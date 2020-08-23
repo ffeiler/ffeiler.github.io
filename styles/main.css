@@ -17,7 +17,7 @@ body {
   line-height: 1.5em;
   margin: 0 auto;
   padding: 0;
-  padding-top: 80px;
+  padding-top: 50px;
   width: 100%;
 }
 
@@ -58,6 +58,7 @@ nav li{
   border-color: red; */
 }
 
+
 @media screen and (max-width: 800px) {
   nav li {
     padding: 10px;
@@ -72,7 +73,7 @@ header nav a {
 
 /* LINKS */
 a {
-  color: rgb(255, 208, 158);
+  color: rgb(241, 12, 69);
   text-decoration: none;
   font-weight: 400;
   /* background-color: red; */
@@ -84,12 +85,16 @@ a:hover {
 }
 
 /* HEADLINES */
-h1, h2, strong {
+h1, h2, h3, strong {
   text-align: center;
   font-family: 'Inconsolata', serif;
   color: #333;
 }
 
+hr {
+  border: 2px solid rgb(107, 124, 133);
+  width: 50%;
+}
 
 /* section */
 section{
@@ -137,6 +142,7 @@ section{
   border-style: solid;
   border-color: black; */
 }
+
 
 .features figure img {
   border: 1px solid white;
@@ -190,7 +196,7 @@ button a {
 
 #defaultCanvas {
   margin: 0;
-  margin-top: -25px;
+  margin-top: 5px;
   /* border-radius: 5px;
   border-style: solid;
   border-color: red; */

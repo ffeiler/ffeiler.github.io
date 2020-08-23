@@ -40,7 +40,7 @@ class Shape {
 
 
       if (b < 0.4) { (new LineSegments()).render() }
-        else if (a > 0.4) { (new DottedLines()).render() };
+        else if (a > 0.4 && e < 0.66) { (new DottedLines()).render() };
 
       if ((c < 0.2) || ((a > 0.3) && (a < 0.7) && (b > 0.4))) { (new Circles()).render() };
 
@@ -160,13 +160,14 @@ class RingOfShapes extends Shape {
     if ((this.radius - this.center) < 0) { this.radius = this.radius/2; };
     if ((this.radius + this.center) > RADIUS) { this.radius = RADIUS - this.center; };
 
+      var in_or_outwards = boolRandom();
       for (let i = 0; i < this.numSym; i++) {
         if (a < 0.33) {
           ellipse(this.center, 0, this.radius, this.radius);
         } else if (a >= 0.66) {
           rect(this.center, 0, this.radius, this.radius);
         } else {
-          custom_triangle(this.center, this.radius, boolRandom());
+          custom_triangle(this.center, this.radius, in_or_outwards);
         }
 
         rotate(this.angle);
@@ -185,8 +186,8 @@ class SteppedHexagons extends Shape {
   }
 
   render () {
-    stroke(this.sC)
     noFill()
+    stroke(this.sC)
     strokeWeight(this.sW)
     push()
       translate(width / 2, height / 2)
