@@ -1,0 +1,4 @@
+baseURL = "https://ffeiler.github.io/blog"
+languageCode = "en-us"
+title = "Blog Hello World?"
+theme = "ananke"
