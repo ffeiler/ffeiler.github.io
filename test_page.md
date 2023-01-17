@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "test_page"
+title: "This is a title"
 permalink: /test/
 ---
 
-# Some test content
-- Hello internet :)
+# Heading 1
+- This is a point I want to make
