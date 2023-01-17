@@ -1,0 +1,16 @@
+image: assets/img/smile.png
+username: Florian Feiler
+description: description
+webpage: https://ffeiler.github.io
+experience:
+  - start: 2022-03-07
+    end: 2023-03-31
+    experience : Baselabs, Working Student Deep Learning
+interests:
+  - Computational Neuroscience
+  - XAI
+skills: 
+  - skill: Python
+    value: 80
+  - skill: PyTorch
+    value: 80
