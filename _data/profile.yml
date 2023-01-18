@@ -1,0 +1,48 @@
+image: assets/img/ffeiler_pp.webp
+username: Florian Feiler
+description: M.Sc. Student in Data Science. Currently looking for a Master Thesis<br />Speaking 🇩🇪 🇬🇧 🇪🇸
+webpage: https://ffeiler.github.io
+experience: 
+  - start: 2022/03
+    end: current
+    experience : BASELABS, Working Student Deep Learning
+  - start: 2020/10
+    end: current
+    experience : M.Sc. Data Science, TU Chemnitz
+  - start: 2015/10
+    end: 2020/03
+    experience : B.Sc. Physics, Georg-August-University Goettingen
+interests: 
+  - Computational Neuroscience
+  - Deep Reinforcement Learning
+  - Complex Systems 
+  - Explainable AI
+skills: 
+  - skill: PyTorch
+    value: 80  # Percentage
+  - skill: Data Visualization
+    value: 75
+  - skill: Python
+    value: 60 
+  - skill: MLOps
+    value: 50
+social:
+  email:  ffeiler@proton.me
+  orcid: 
+  scholar: 
+  publons: 
+  research_gate: 
+  dblp:  # Full URL
+  semantic_scholar:  # Full URL
+  linkedin: https://www.linkedin.com/in/florian-feiler-11823a198/
+  github: ffeiler
+  gitlab: 
+  bitbucket: 
+  google_plus:
+  mastodon: # https://mastodon.social
+  twitter: fffeiler
+  youtube:
+  facebook:
+  instagram:
+#awards: # Remove for hiding the awards section
+#  - "This is an award I got"
