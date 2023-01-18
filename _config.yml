@@ -5,7 +5,7 @@ baseurl: ""
 # Turn subpages on or off
 publications: False
 presentations: True
-blog: True
+blog: False
 
 # Language of the website
 lang: en
