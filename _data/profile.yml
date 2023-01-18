@@ -1,17 +1,21 @@
 image: assets/img/ffeiler_pp.png
 username: Florian Feiler
-description: description
+description: B.Sc. in Physics, M.Sc. Student in Data Science
 webpage: https://ffeiler.github.io
 experience: # Remove for hiding the experience section
-  - start: 2017-05-03
-    end: 2018-05-06
-    experience : Baselabs, Working Student
+  - start: 2022-03-07
+    end: 2023-03-31
+    experience : Baselabs, Working Student Deep Learning
 interests: # Remove for hiding the interests section
-  - Interest 1
-  - Interest 2
+  - Computational Neuroscience
+  - Complex Systems
+  - Machine Learning
+  - Deep Learning
 skills: # Remove for hiding the skills section
   - skill: PyTorch
     value: 85  # Percent value
+  - skill: Python
+    value: 90  
 social:
   email:  ffeiler@proton.me
   orcid: 
@@ -20,12 +24,12 @@ social:
   research_gate: 
   dblp:  # Full URL
   semantic_scholar:  # Full URL
-  linkedin:  # Full URL 
+  linkedin: https://www.linkedin.com/in/florian-feiler-11823a198/
   github: ffeiler
   gitlab: 
   bitbucket: 
   google_plus:
-  mastodon: https://mastodon.social
+  mastodon: # https://mastodon.social
   twitter: fffeiler
   youtube:
   facebook:
