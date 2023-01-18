@@ -1,6 +1,6 @@
 image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: M.Sc. Student in Data Science. Currently looking for a Master Thesis.<br />Speaking 🇩🇪 🇬🇧 🇪🇸
+description: M.Sc. Student in Data Science. Currently looking for a Master Thesis<br />Speaking 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
   - start: 2022/03
@@ -8,10 +8,10 @@ experience:
     experience : BASELABS, Working Student Deep Learning
   - start: 2020/10
     end: current
-    experience : M.Sc. Data Science, TU Chemitz
+    experience : M.Sc. Data Science, TU Chemnitz
   - start: 2015/10
     end: 2020/03
-    experience : B.Sc. Physics, Georg-August-Universität Göttingen
+    experience : B.Sc. Physics, Georg-August-University Goettingen
 interests: 
   - Computational Neuroscience
   - Deep Reinforcement Learning
