@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-      <title> ffeiler | p5 Generative Crystals </title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-      <meta name="description" content="florian feiler Portfolio">
-      <meta name="keywords" content="data science, data art, data vizualisation">
-      <link href="styles/main.css" rel="stylesheet" type="text/css"/>
-      <link rel="icon" href="images/favicon.png">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-      <link rel="apple-touch-icon" sizes="192x192" href="images/favicon.png" />
-      <script async src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
-      <script src="libraries/p5.js"></script>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
-      <script src="libraries/p5.svg.js"></script>
-      <script src="js/helpers.js"></script>
-      <script src="js/Layers.js"></script>
-      <!-- <script src="js/sketch.js"></script> -->
-  </head>
 
-  <body>
-    <header style="border-bottom: 3px solid rgb(107, 124, 133);">
-      <nav>
-        <ul class="universal_header">
-          <li><a style="color: rgb(107, 124, 133);" href="./index.html"> &#8887; florian feiler</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <title> ffeiler | p5 Generative Crystals </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="florian feiler Portfolio">
+  <meta name="keywords" content="data science, data art, data vizualisation">
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/favicon.png" />
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+  <script src="libraries/p5.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
+  <script src="libraries/p5.svg.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/Layers.js"></script>
+  <!-- <script src="js/sketch.js"></script> -->
+</head>
 
-    <!-- <h1>First Steps with P5.js</h1> -->
+<body>
+  <header style="border-bottom: 3px solid rgb(107, 124, 133);">
+    <nav>
+      <ul class="universal_header">
+        <li><a style="color: rgb(107, 124, 133);" href="/legacy/index_legacy.html"> &#8887; florian feiler</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- <hr> -->
+  <!-- <h1>First Steps with P5.js</h1> -->
 
-    <img style="margin:30px auto;"class="content_img" src="images/crystals.webp">
+  <!-- <hr> -->
 
-    <hr>
-    <h2>Generative Crystals</h2>
-    <p class="content">
-      Intending to get into Generative Art and p5.js, I followed
-      the main ideas of a tutorial to generate symmetrical crystal shapes.
-      Additionally, it gave me the possibility to further my object-oriented
-      programming knowledge. Each crystal is defined by a different background
-      shape (Hexagon, Circle, or Repeated Hexagons) and different ornaments
-      (like Line Segments, Circles, or Dotted Lines). Every piece's color is
-      randomly drawn from a given color palette. Due to the inherent randomness
-      of the system, every new crystal will exhibit different combinations while
-      always keeping several optical proportions.
-    </p>
+  <img style="margin:30px auto;" class="content_img" src="images/crystals.webp">
 
-    <p class="content">
-      For me, it was especially interesting to see how relatively simple
-      code formed complex crystals. Coming from an academic and scientific
-      coding background, it was at the same time pleasing to see such beautiful
-      and symmetric crystals forming that easily, and weird experience, as
-      generative and creative coding (even though having similar code syntax and structure)
-      follow a completely different workflow. In my - admittedly very small -
-      experience, creative coding needed much less conceptual structure and
-      therefore I often felt like I would miss important steps of setting up
-      the codebase. Also, the higher importance of trial-and-error made me
-      feel incredibly clumsy at times.
-    </p>
+  <hr>
+  <h2>Generative Crystals</h2>
+  <p class="content">
+    Intending to get into Generative Art and p5.js, I followed
+    the main ideas of a tutorial to generate symmetrical crystal shapes.
+    Additionally, it gave me the possibility to further my object-oriented
+    programming knowledge. Each crystal is defined by a different background
+    shape (Hexagon, Circle, or Repeated Hexagons) and different ornaments
+    (like Line Segments, Circles, or Dotted Lines). Every piece's color is
+    randomly drawn from a given color palette. Due to the inherent randomness
+    of the system, every new crystal will exhibit different combinations while
+    always keeping several optical proportions.
+  </p>
 
-    <p class="content">
-      At the end of the page, there's a full-screen grid of generative crystals
-      that updates with every mouse click and can be saved:
-      <button onclick="saveSVG('genCrystals')" style="float: center;"> Download SVG</button>
-    </p>
-    <hr>
-    <h2>References</h2>
-    <p class="content"> &#9829; Tutorial: <a href="https://www.youtube.com/playlist?list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf0">Matthew Epler's Designing Generative Systems with p5js</a>
-    </p>
-    <p class="content"> &#9829; Designs based on: <a href="https://ruthl.in/">Ruth Lin's</a> RISD 2017 Commencement Program
-    </p>
-    <p class="content"> &#9829; Color choices: <a href="https://twitter.com/adamfuhrer"> <img style="height:15px;padding-right:5px;"src="images/twitter_logo.svg" alt="twitter profile of Adam Fuhrer">Adam Fuhrer's</a> <a href="https://colors.lol/subtile">Overly descriptive color palettes</a>
-    </p>
+  <p class="content">
+    For me, it was especially interesting to see how relatively simple
+    code formed complex crystals. Coming from an academic and scientific
+    coding background, it was at the same time pleasing to see such beautiful
+    and symmetric crystals forming that easily, and weird experience, as
+    generative and creative coding (even though having similar code syntax and structure)
+    follow a completely different workflow. In my - admittedly very small -
+    experience, creative coding needed much less conceptual structure and
+    therefore I often felt like I would miss important steps of setting up
+    the codebase. Also, the higher importance of trial-and-error made me
+    feel incredibly clumsy at times.
+  </p>
+
+  <p class="content">
+    At the end of the page, there's a full-screen grid of generative crystals
+    that updates with every mouse click and can be saved:
+    <button onclick="saveSVG('genCrystals')" style="float: center;"> Download SVG</button>
+  </p>
+  <hr>
+  <h2>References</h2>
+  <p class="content"> &#9829; Tutorial: <a
+      href="https://www.youtube.com/playlist?list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf0">Matthew Epler's Designing
+      Generative Systems with p5js</a>
+  </p>
+  <p class="content"> &#9829; Designs based on: <a href="https://ruthl.in/">Ruth Lin's</a> RISD 2017 Commencement
+    Program
+  </p>
+  <p class="content"> &#9829; Color choices: <a href="https://twitter.com/adamfuhrer"> <img
+        style="height:15px;padding-right:5px;" src="images/twitter_logo.svg" alt="twitter profile of Adam Fuhrer">Adam
+      Fuhrer's</a> <a href="https://colors.lol/subtile">Overly descriptive color palettes</a>
+  </p>
 
 
-    <hr>
+  <hr>
 
 
 
-    <script src="js/sketch.js"></script>
+  <script src="js/sketch.js"></script>
 
-    <!-- <footer>Zimbostraße 5	• +(49) 2554 648523 • web@mail.com</footer> -->
-  </body>
+  <!-- <footer>Zimbostraße 5	• +(49) 2554 648523 • web@mail.com</footer> -->
+</body>
+
 </html>
