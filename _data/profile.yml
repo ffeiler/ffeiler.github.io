@@ -1,6 +1,6 @@
-image: assets/img/ffeiler_pp.png
+image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: M.Sc. Student in Data Science. Currently looking for a Master Thesis.
+description: M.Sc. Student in Data Science. Currently looking for a Master Thesis. 🗣️ 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
   - start: 2022/03
@@ -14,14 +14,18 @@ experience:
     experience : B.Sc. Physics, Georg-August-Universität Göttingen
 interests: 
   - Computational Neuroscience
-  - Complex Systems
-  - Machine Learning
-  - Deep Learning
+  - Deep Reinforcement Learning
+  - Complex Systems 
+  - Explainable AI
 skills: 
   - skill: PyTorch
-    value: 85  # Percent value
+    value: 80  # Percentage
+  - skill: Data Visualization
+    value: 75
   - skill: Python
-    value: 90  
+    value: 60 
+  - skill: MLOps
+    value: 50
 social:
   email:  ffeiler@proton.me
   orcid: 
