@@ -3,14 +3,17 @@ username: Florian Feiler
 description: M.Sc. Student in Data Science. Currently looking for a Master Thesis<br />Speaking 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
-  - start: 2022/03
+  - start: 2022-03
     end: current
     experience : BASELABS, Working Student Deep Learning
-  - start: 2020/10
+  - start: 2020
     end: current
     experience : M.Sc. Data Science, TU Chemnitz
-  - start: 2015/10
-    end: 2020/03
+  - start: 2019
+    end: 2019
+    experience : Erasmus, Master Condensed Matter & Biological Systems, UAM Madrid
+  - start: 2015
+    end: 2020
     experience : B.Sc. Physics, Georg-August-University Goettingen
 interests: 
   - Computational Neuroscience
