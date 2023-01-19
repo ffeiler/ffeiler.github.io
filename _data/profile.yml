@@ -22,10 +22,11 @@ skills:
     value: 80  # Percentage
   - skill: Data Visualization
     value: 75
-  - skill: Python
+  - skill: Python (pandas, numpy, scikit-learn, ...)
     value: 60 
   - skill: MLOps
     value: 50
+  
 social:
   email:  ffeiler@proton.me
   orcid: 
