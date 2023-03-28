@@ -1,5 +1,5 @@
 ---
 layout: portfolio
-title : Portfolio
+title : Florian Feiler
 description: Personal portfolio
 ---
