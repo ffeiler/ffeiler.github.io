@@ -1,10 +1,13 @@
 image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: M.Sc. Student in Data Science. Currently looking for a Master Thesis<br />Speaking 🇩🇪 🇬🇧 🇪🇸
+description: M.Sc. Student in Data Science. Soon starting my Master Thesis<br />Speaking 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
-  - start: 2022-03
+  - start: 2023-05
     end: current
+    experience : Master Thesis, Forschungszentrum Juelich
+  - start: 2022
+    end: 2023
     experience : BASELABS, Working Student Deep Learning
   - start: 2020
     end: current
@@ -31,7 +34,7 @@ skills:
     value: 50
   
 social:
-  email:  ffeiler@proton.me
+  email: ffeiler@proton.me
   orcid: 
   scholar: 
   publons: 
