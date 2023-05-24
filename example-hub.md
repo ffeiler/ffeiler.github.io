@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: hub
 title: Example Hub Page
 citekey: test # automatically add links, abstract and bibtex entry from a publication
@@ -13,4 +13,4 @@ links: # specify links manually
 
 ## Custom Content
 
-You can insert custom content on a hub page by putting it here.
+You can insert custom content on a hub page by putting it here. -->
