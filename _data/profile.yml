@@ -5,7 +5,7 @@ webpage: https://ffeiler.github.io
 experience: 
   - start: 2023-05
     end: current
-    experience : Master Thesis, Forschungszentrum Juelich
+    experience : Master Thesis, Forschungszentrum Jülich
   - start: 2022
     end: 2023
     experience : BASELABS, Working Student Deep Learning
@@ -17,7 +17,7 @@ experience:
     experience : Erasmus, Master Condensed Matter & Biological Systems, UAM Madrid
   - start: 2015
     end: 2020
-    experience : B.Sc. Physics, Georg-August-University Goettingen
+    experience : B.Sc. Physics, Georg-August-University Göttingen
 interests: 
   - Computational Neuroscience
   - Neuromorphic Computing

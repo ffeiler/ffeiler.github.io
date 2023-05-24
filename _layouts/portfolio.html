@@ -4,9 +4,9 @@ layout: page
 {% assign profile = site.data.profile %}
 {% assign urlstart = profile.image | split: '/' %}
 {% if urlstart == 'https:' %}
-  {% assign imgurl = profile.image %}
+{% assign imgurl = profile.image %}
 {% else %}
-  {% assign imgurl = profile.image | relative_url %}
+{% assign imgurl = profile.image | relative_url %}
 {% endif %}
 
 </div><!-- This Tag means End .container -->

@@ -1,54 +1,60 @@
-header{
+header {
     margin-bottom: 60px;
     @extend %page-padding;
-    nav{
+
+    nav {
         white-space: nowrap;
-        display:block!important;
-        overflow-x: scroll;
+        display: block !important;
+        overflow-x: hidden;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
-        ul{
-            li{
+
+        ul {
+            li {
                 position: relative;
-                display: inline-block; 
-                margin-right : 5%;
+                display: inline-block;
+                margin-right: 5%;
                 font-size: 1rem;
-                line-height: 2.3rem; 
+                line-height: 2.3rem;
             }
+
             .current {
                 font-weight: 700;
             }
+
             .current::after {
-                content: " "; 
+                content: " ";
                 position: relative;
                 display: block;
-                width: 85%!important;
+                width: 85% !important;
                 bottom: 0;
                 margin: 0 auto;
                 border: 1px solid !important;
             }
-            .current.btn-nav:hover{
-                color : $theme-color;
+
+            .current.btn-nav:hover {
+                color: $theme-color;
             }
-            .btn-nav::after{
-                content: " "; 
+
+            .btn-nav::after {
+                content: " ";
                 position: relative;
-                display: block; 
+                display: block;
                 width: 0;
                 bottom: 0;
                 margin: 0 auto;
-                border: 1px solid rgba(255, 255, 255, 0); 
+                border: 1px solid rgba(255, 255, 255, 0);
             }
-            
-            .btn-nav:hover::after{
-                border-color: $theme-color!important;
+
+            .btn-nav:hover::after {
+                border-color: $theme-color !important;
                 width: 85%;
                 transition: width 350ms ease-in-out;
-                -webkit-transition: width 350ms ease-in-out; 
-                -moz-transition: width 350ms ease-in-out; 
+                -webkit-transition: width 350ms ease-in-out;
+                -moz-transition: width 350ms ease-in-out;
 
             }
         }
-        
+
     }
 }

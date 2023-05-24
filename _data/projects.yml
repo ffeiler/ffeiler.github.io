@@ -1,13 +1,13 @@
-- project:
-    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url:  # Full URL
-    image: # path: assets/project/
-    date: 03/2023 &ndash; Developing
-    title: Dummy project
-    summary: This is a Dummy
-    description:  Description of the dummy project
-
+# - project:
+#     print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+#     modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
+#     url:  # Full URL
+#     image: # path: assets/project/
+#     date: 03/2023 &ndash; Developing
+#     title: Dummy project
+#     summary: This is a Dummy
+#     description:  Description of the dummy project
+# TODO projects
 
 
 #- project :

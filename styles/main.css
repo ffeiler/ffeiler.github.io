@@ -41,13 +41,13 @@ header {
 
 /* NAVIGATION */
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-nav li{
+nav li {
   display: inline-flex;
   /* margin: 5px; */
   padding: 10px;
@@ -78,6 +78,7 @@ a {
   font-weight: 400;
   /* background-color: red; */
 }
+
 a:hover {
   text-decoration: underline;
   text-decoration-thickness: 5px;
@@ -85,7 +86,10 @@ a:hover {
 }
 
 /* HEADLINES */
-h1, h2, h3, strong {
+h1,
+h2,
+h3,
+strong {
   text-align: center;
   font-family: 'Inconsolata', serif;
   color: #333;
@@ -97,7 +101,7 @@ hr {
 }
 
 /* section */
-section{
+section {
   /* background-color: green; */
   /* color: black; */
   /* padding: 10px; */
@@ -114,7 +118,7 @@ section{
   border-color: red; */
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .content {
     padding: 0px 5%;
   }
@@ -153,10 +157,11 @@ section{
 
 
 
-@media screen and (max-width: 310px){
-  .features figure{
+@media screen and (max-width: 310px) {
+  .features figure {
     width: 150px;
   }
+
   .features figure img {
     width: 150px;
   }
@@ -169,7 +174,7 @@ section{
   width: 50%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .content_img {
     width: 100%;
   }
