@@ -1,6 +1,6 @@
 image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: M.Sc. Student in Data Science. Soon starting my Master Thesis<br />Speaking 🇩🇪 🇬🇧 🇪🇸
+description: M.Sc. Student in Data Science. Working on bio-plausible self-supervised learning<br />Speaking 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
   - start: 2023-05
@@ -20,8 +20,8 @@ experience:
     experience : B.Sc. Physics, Georg-August-University Goettingen
 interests: 
   - Computational Neuroscience
+  - Neuromorphic Computing
   - Deep Reinforcement Learning
-  - Complex Systems 
   - Explainable AI
 skills: 
   - skill: PyTorch
@@ -46,10 +46,11 @@ social:
   gitlab: 
   bitbucket: 
   google_plus:
-  mastodon: # https://mastodon.social
-  twitter: fffeiler
+  mastodon: https://neuromatch.social/@ffeiler
+  # twitter: fffeiler
   youtube:
   facebook:
   instagram:
+
 #awards: # Remove for hiding the awards section
 #  - "This is an award I got"
