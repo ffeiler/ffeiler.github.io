@@ -3,7 +3,7 @@ username: Florian Feiler
 description: M.Sc. Student in Data Science. Working on bio-plausible self-supervised learning<br />Speaking 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
-  - start: 2023-05
+  - start: 2023
     end: current
     experience : Master Thesis, Forschungszentrum Jülich
   - start: 2022
@@ -18,11 +18,13 @@ experience:
   - start: 2015
     end: 2020
     experience : B.Sc. Physics, Georg-August-University Göttingen
+
 interests: 
   - Computational Neuroscience
   - Neuromorphic Computing
   - Deep Reinforcement Learning
   - Explainable AI
+
 skills: 
   - skill: PyTorch
     value: 80  # Percentage
