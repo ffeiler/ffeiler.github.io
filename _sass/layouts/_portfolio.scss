@@ -119,6 +119,11 @@
           .description {
             font-size: 1rem;
           }
+
+          .short_desc {
+            font-size: 0.75rem;
+            color: rgb(160, 159, 159);
+          }
         }
 
         li.meta::before {

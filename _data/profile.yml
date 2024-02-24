@@ -1,14 +1,16 @@
 image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: M.Sc. Student in Data Science. Working on bio-plausible self-supervised learning<br />Speaking 🇩🇪 🇬🇧 🇪🇸
+description: M.Sc. Student in Data Science. Working on bio-plausible sequence learning in the Neuromorphic computing group of Prof. Emre Neftci.<br />Currently looking for PhD positions in Neuromorphic Computing.<br />Speaking 🇩🇪 🇬🇧 🇪🇸
 webpage: https://ffeiler.github.io
 experience: 
   - start: 2023
     end: current
     experience : Master Thesis, Forschungszentrum Jülich
+    # short_desc: "Bio-plausible Sequence Learning in Neuromorphic Computing"
   - start: 2022
     end: 2023
     experience : Working Student Deep Learning, BASELABS
+    # short_desc: "Development of a custom CV model for automotive applications"
   - start: 2020
     end: current
     experience : M.Sc. Data Science, TU Chemnitz
@@ -22,18 +24,19 @@ experience:
 interests: 
   - Computational Neuroscience
   - Neuromorphic Computing
+  - Dendritic Computation
   - Deep Reinforcement Learning
   - Explainable AI
 
-skills: 
-  - skill: PyTorch
-    value: 80  # Percentage
-  - skill: Data Visualization
-    value: 75
-  - skill: Python (pandas, numpy, scikit-learn, ...)
-    value: 60 
-  - skill: MLOps
-    value: 50
+# skills: 
+#   - skill: PyTorch
+#     value: 90  # Percentage
+#   - skill: Data Visualization
+#     value: 75
+#   - skill: Python (pandas, numpy, scikit-learn, ...)
+#     value: 60 
+#   - skill: MLOps
+#     value: 50
   
 social:
   email: ffeiler@proton.me
