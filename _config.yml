@@ -3,7 +3,7 @@ baseurl: ""
 
 # Features Setting
 # Turn subpages on or off
-publications: False
+publications: True
 presentations: True
 blog: False
 
@@ -46,8 +46,8 @@ scholar:
   bibliography_template: pubstemplate
   style: apa
   locale: en
-  last_name: Me
-  first_name: [Myself, M.]
+  last_name: Feiler
+  first_name: [Florian, F.]
   sort_by: year,month
   order: descending,ascending
 
