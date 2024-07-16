@@ -4,7 +4,7 @@ baseurl: ""
 # Features Setting
 # Turn subpages on or off
 publications: True
-presentations: True
+presentations: False
 blog: False
 
 # Language of the website
@@ -20,7 +20,6 @@ locale: en_GB
 # Page Settings
 theme_settings:
   title: Grape Academic Theme
-
   experience_title: EXPERIENCE
   interests_title: RESEARCH INTERESTS
   skills_title: SKILLS
