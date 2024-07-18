@@ -1,6 +1,9 @@
 image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: M.Sc. Student in Data Science. Working on bio-plausible sequence learning in the Neuromorphic computing group of Prof. Emre Neftci.<br />Currently looking for PhD positions in Neuromorphic Computing.<br />Speaking 🇩🇪 🇬🇧 🇪🇸
+description: Hi there! Worked on bio-plausible sequence learning in the Neuromorphic computing group of Prof. Emre Neftci. Conducted student research on integrating top-down feedback and self-supervised learning.<br /><br />Currently seeking PhD positions in Neuromorphic Computing.<br />Speaking 🇩🇪 German, 🇬🇧 English, and 🇪🇸 Spanish.
+
+
+
 webpage: https://ffeiler.github.io
 experience: 
   - start: 2023
@@ -22,11 +25,12 @@ experience:
     experience : B.Sc. Physics, Georg-August-University Göttingen
 
 interests: 
-  - Computational Neuroscience
   - Neuromorphic Computing
   - Dendritic Computation
   - Deep Reinforcement Learning
+  - TinyML/Edge AI
   - Explainable AI
+  - Computational Neuroscience
 
 # skills: 
 #   - skill: PyTorch
@@ -51,7 +55,7 @@ social:
   gitlab: 
   bitbucket: 
   google_plus:
-  mastodon: https://neuromatch.social/@ffeiler
+  mastodon: # https://neuromatch.social/@ffeiler
   # twitter: fffeiler
   youtube:
   facebook:
