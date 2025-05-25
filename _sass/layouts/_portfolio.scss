@@ -131,8 +131,9 @@
           position: absolute;
           width: 15px;
           height: 15px;
-          top: 55%;
+          top: 50%;
           left: -10px;
+          transform: translateY(-50%);
           background-color: $theme-color;
           border-radius: 50%;
         }

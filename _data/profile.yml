@@ -1,6 +1,7 @@
 image: assets/img/ffeiler_pp.webp
 username: Florian Feiler
-description: Hi there! Worked on bio-plausible sequence learning in the Neuromorphic computing group of Prof. Emre Neftci and conducted student research on integrating top-down feedback and self-supervised learning. Now bringing SpiNNaker 2 into the world. # <br /><br />Speaking 🇩🇪 German, 🇬🇧 English, and 🇪🇸 Spanish.
+description: Hi there! I'm solving real-world problems on Neuromorphic Hardware @ <a href="https://spinncloud.com">SpiNNcloud Systems</a>
+# <br /><br />Speaking 🇩🇪 German, 🇬🇧 English, and 🇪🇸 Spanish.
 
 
 
@@ -12,19 +13,19 @@ experience:
   - start: 2023
     end: 2024
     experience : Master Thesis, Forschungszentrum Jülich
-    # short_desc: "Bio-plausible Sequence Learning in Neuromorphic Computing"
+    short_desc: "Bio-plausible Sequence Learning"
   - start: 2022
     end: 2023
     experience : Working Student Computer Vision, BASELABS
     # short_desc: "Development of a custom CV model for automotive applications"
-  - start: 2020
-    end: 2024
+  - start: 
+    end:
     experience : M.Sc. Data Science, TU Chemnitz
-  - start: 2019
-    end: 2019
-    experience : Erasmus, Master Condensed Matter & Biological Systems, UAM Madrid
-  - start: 2015
-    end: 2020
+  - start: 
+    end: 
+    experience : Erasmus, Condensed Matter & Biological Systems, UAM Madrid
+  - start: 
+    end: 
     experience : B.Sc. Physics, Georg-August-University Göttingen
 
 interests: 
@@ -47,7 +48,7 @@ interests:
   
 social:
   email: ffeiler@proton.me
-  orcid: 
+  orcid: 0009-0000-3940-6874
   scholar: 
   publons: 
   research_gate: 
